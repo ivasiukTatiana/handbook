@@ -1,0 +1,13 @@
+<mat-toolbar color="primary" class="mat-elevation-z12">
+  <img [src]="activeHeaderNav.headerImg" alt="">
+  <span class="header-nav">
+    <a routerLink="/"><i>{{ activeHeaderNav.headerEn }}</i> {{ activeHeaderNav.headerUk }}</a>
+  </span>
+  <span class="spacer"></span>
+
+  <a *ngFor="let item of headerNav"
+    mat-button [routerLink]="item.headerLink"
+    (click)="onRouterClick(item.headerId)"
+    routerLinkActive="activeRouter"
+    class="mat-elevation-z1"> {{ item.headerNav }} </a>
+</mat-toolbar>

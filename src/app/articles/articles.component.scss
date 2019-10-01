@@ -1,0 +1,25 @@
+$background-color: rgb(250, 250, 250);
+
+pre {
+  padding: 4px;
+  background : darken($background-color, 10%);
+  overflow-x: scroll;
+
+  .color-red {
+    color: red;
+  }
+}
+
+.tooltip-color {
+  background: rgb(207, 194, 194);
+}
+
+i {
+  color: green;
+}
+
+.table td {
+  padding: 5px
+}
+
+//table i {rgb(162, 162, 162);}

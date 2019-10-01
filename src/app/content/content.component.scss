@@ -1,0 +1,122 @@
+$background-color: rgb(250, 250, 250);
+$color: #000080;
+
+.wrap-container{
+  display: flex;
+  color: $color;
+}
+
+.nav-container {
+  background-color: $background-color;
+  margin-bottom: 4px;
+
+  .nav-container-sticky {
+    position: sticky;
+    top: 60px;
+    height: 656px;
+    overflow-y: auto;
+  }
+
+  .mat-list-item {
+    height: 32px !important;
+    font-size: 0.9rem;
+    color: $color;
+  }
+}
+
+::ng-deep .backdrop {
+  background-color: rgb(250, 250, 250);
+}
+
+.mat-menu-item {
+  height: 32px !important;
+  font-size: 0.9rem;
+  a {
+    color: $color;
+    text-decoration: none;
+  }
+}
+
+.content-container {
+  flex-grow: 3;
+  height: 660px;
+  background : darken($background-color, 3%);
+  font-family: Roboto,"Helvetica Neue",sans-serif;
+  overflow: auto;
+  padding-top: 60px;
+  margin-top: -60px;
+  margin-bottom: 0;
+
+  .content {
+    height: 608px;
+    overflow-y: scroll;
+    padding-top: 60px;
+    margin-top: -60px;
+    margin-bottom: 4px;
+
+    .article {
+      padding: 6px;
+
+      h3 {
+        margin: 6px;
+        padding-top: 60px;
+        margin-top: -54px;
+      }
+
+      section {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}
+
+//for responsive design
+@media (min-width: 960px) {
+  .button-container {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 960px) {
+  .nav-container {
+    display: none;
+  }
+  .menu-button {
+    margin-left: 2px;
+    position: sticky;
+    top: 60px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 860px) {
+  .content-container {
+    padding-top: 48px;
+    margin-top: -48px;
+
+    .content {
+      padding-top: 48px;
+      margin-top: -48px;
+
+      .article h3 {
+        padding-top: 48px;
+        margin-top: -42px;
+      }
+    }
+  }
+
+  .menu-button {
+    top: 44px;
+  }
+}
+
+@media (min-width: 580px) and (max-width: 680px) {
+  .content-container {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 580px) {
+  .content-container {
+    font-size: 0.6rem;
+  }
+}

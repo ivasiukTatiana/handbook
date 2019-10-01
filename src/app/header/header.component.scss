@@ -1,0 +1,77 @@
+$header-color: rgb(103, 58, 183);
+
+mat-toolbar {
+  padding-left: 0;
+  margin-bottom: 4px;
+  height: 56px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding-right: 0.8rem;
+  font-size: 1.1rem;
+}
+
+mat-toolbar > a {
+  font-size: 1rem;
+  padding-left: 0.8rem;
+  margin-left: 0.4rem;
+  border-radius: 5%;
+}
+
+mat-toolbar > a::after {
+	content: '';
+	display: block;
+	width: 100%;
+	background-color: #ccc;
+	height: 2px;
+	transform: scale(0);
+	transition: all .3s;
+}
+mat-toolbar > a:hover::after {
+  transform: scale(1);
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+img {
+  height: 95%;
+}
+
+i {
+  font-size: 0.9rem;
+  padding: 0 1rem;
+}
+
+.activeRouter {
+  background-color: darken($header-color, 5%);
+}
+
+/* Screen = B/w 320px to 960px */
+@media (min-width: 320px) and (max-width: 860px) {
+  mat-toolbar {
+    height: 44px;
+  }
+}
+
+@media (min-width: 620px) and (max-width: 860px) {
+  .header-nav {
+    font-size: 0.9rem;
+  }
+  mat-toolbar > a {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 710px) {
+  .header-nav {
+    display: none;
+  }
+
+  mat-toolbar > a {
+    font-size: 0.7rem;
+  }
+}
