@@ -472,8 +472,6 @@ var AppModule = /** @class */ (function () {
                 _angular_material_toolbar__WEBPACK_IMPORTED_MODULE_6__["MatToolbarModule"],
                 _angular_material_sidenav__WEBPACK_IMPORTED_MODULE_7__["MatSidenavModule"],
                 _angular_material_list__WEBPACK_IMPORTED_MODULE_8__["MatListModule"],
-                //MatDividerModule,
-                //MatGridListModule,
                 _angular_material_icon__WEBPACK_IMPORTED_MODULE_9__["MatIconModule"],
                 _angular_material_tooltip__WEBPACK_IMPORTED_MODULE_10__["MatTooltipModule"],
                 _angular_material_menu__WEBPACK_IMPORTED_MODULE_11__["MatMenuModule"]
@@ -805,7 +803,7 @@ var HeaderComponent = /** @class */ (function () {
         this.headerNav = [
             {
                 headerId: 0,
-                headerImg: "../../assets/images/icon-html.gif",
+                headerImg: "./assets/images/icon-html.gif",
                 headerEn: "Hyper Text Markup Language ",
                 headerUk: " мова гіпертекстової розмітки.",
                 headerNav: "HTML",
@@ -813,7 +811,7 @@ var HeaderComponent = /** @class */ (function () {
             },
             {
                 headerId: 1,
-                headerImg: "../../assets/images/icon-css.gif",
+                headerImg: "./assets/images/icon-css.gif",
                 headerEn: "Cascading Style Sheets",
                 headerUk: "каскадні таблиці стилів.",
                 headerNav: "CSS",
@@ -821,7 +819,7 @@ var HeaderComponent = /** @class */ (function () {
             },
             {
                 headerId: 2,
-                headerImg: "../../assets/images/icon-js.gif",
+                headerImg: "./assets/images/icon-js.gif",
                 headerEn: "",
                 headerUk: "JavaScript - скриптова мова програмування.",
                 headerNav: "JavaScript",

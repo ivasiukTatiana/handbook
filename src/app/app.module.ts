@@ -7,8 +7,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
-import { MatDividerModule } from '@angular/material/divider';
-import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatMenuModule } from '@angular/material/menu';
@@ -39,8 +37,6 @@ import { ArticlesComponent } from './articles/articles.component';
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    //MatDividerModule,
-    //MatGridListModule,
     MatIconModule,
     MatTooltipModule,
     MatMenuModule

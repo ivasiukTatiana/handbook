@@ -14,7 +14,7 @@ export class HeaderComponent implements OnInit {
   headerNav: HeaderNav[] = [
     {
       headerId: 0,
-      headerImg: "../../assets/images/icon-html.gif",
+      headerImg: "./assets/images/icon-html.gif",
       headerEn: "Hyper Text Markup Language ",
       headerUk: " мова гіпертекстової розмітки.",
       headerNav: "HTML",
@@ -22,7 +22,7 @@ export class HeaderComponent implements OnInit {
     },
     {
       headerId: 1,
-      headerImg: "../../assets/images/icon-css.gif",
+      headerImg: "./assets/images/icon-css.gif",
       headerEn: "Cascading Style Sheets",
       headerUk: "каскадні таблиці стилів.",
       headerNav: "CSS",
@@ -30,7 +30,7 @@ export class HeaderComponent implements OnInit {
     },
     {
       headerId: 2,
-      headerImg: "../../assets/images/icon-js.gif",
+      headerImg: "./assets/images/icon-js.gif",
       headerEn: "",
       headerUk: "JavaScript - скриптова мова програмування.",
       headerNav: "JavaScript",
