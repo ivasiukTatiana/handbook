@@ -11,7 +11,50 @@
       "href": "html#html1",
       "title": "Атрибути тегів.",
       "article": "<p>Щоб розширити можливості окремих тегів застосовуються атрибути тегів. Атрибути завжди пишуться всередині відкриваючого тега і після символів самого тега. Після них слідує знак рівності і значення атрибута в подвійних лапках. Можна написати в одному тезі кілька атрибутів в будь-якому порядку.<br><b>&lt;тег атрибут1 = &quot;значення&quot;  &nbsp;атрибут2 = &quot;значення&quot;&gt; текст &lt;/тег&gt;</b></p><br><table class=\"table\"><tr><td colspan=\"2\"><b>Стандартні атрибути</b> <small> (можуть бути використані для будь-якого HTML-елемента)</small></td></tr><tr><td>id</td><td>Визначає унікальний ідентифікатор для елементу</td></tr><tr><td>class</td><td>Визначає ім'я класу для елемента (використовується для визначення класу в таблиці стилів).</td></tr><tr><td>style</td><td>Задає стилі CSS для елемента, у якого вказаний цей атрибут.</td></tr><tr><td>title</td><td>Підказка, яка з'являється при наведенні курсору на елемент</td></tr></table>"
+    },
+    {
+      "id": "html2",
+      "href": "html#html2",
+      "title": "Заголовки та абзаци. Тег <pre>",
+      "article": "<table class=\"table\"><tr><td>&lt;p&gt;Будь&minus;який&nbsp;текст&lt;/p&gt;</td><td>Створює новий абзац</td></tr><tr><td> &lt;h1&gt;Заголовог&lt;/h1&gt;<br> &lt;h2&gt;Заголовог&lt;/h2&gt;<br> &lt;h3&gt;Заголовог&lt;/h3&gt;<br> &lt;h4&gt;Заголовог&lt;/h4&gt;<br> &lt;h5&gt;Заголовог&lt;/h5&gt;<br> &lt;h6&gt;Заголовог&lt;/h6&gt;</td><td>Створює заголовки Web-сторінки від 1-го до 6-го рівнів<br><b>...</b><h3 class=\"mnull\">Заголовог 3-го рівня</h3><h4 class=\"mnull\">Заголовог 4-го рівня</h4><h5 class=\"mnull\">Заголовог 5-го рівня</h5><h6 class=\"mnull\">Заголовог 6-го рівня</h6></td></tr><tr><td>&lt;br&gt;</td><td> Розрив рядка. Одинарний тег</td></tr><tr><td>&lt;pre&gt;<br>&nbsp;&nbsp;Форматований текст<br>&lt;/pre&gt;</td><td> Визначає блок попередньо форматованого тексту. Текст відображається моно - шрифтом і з усіма пробілами між словами. За замовчуванням, будь-яка кількість пробілів, які йдуть в коді поспіль, на веб-сторінці відображається як один. Тег &lt;pre&gt; дозволяє обійти цю особливість.</td></tr></table>"
+    },
+    {
+      "id": "html3",
+      "href": "html#html3",
+      "title": "Форматування тексту",
+      "article": "<table class=\"table\"><tr><td>&lt;b&gt; ... &lt;/b&gt;</td><td><b>Напівжирний шрифт</b></td></tr><tr><td>&lt;i&gt; ... &lt;/i&gt;</td><td><i class=\"basecolor\">Курсивний шрифт</i></td></tr><tr><td>&lt;u&gt; ... &lt;/u&gt;</td><td><u>Підкреслений шрифт</u></td></tr><tr><td>&lt;sup&gt; .... &lt;/sup&gt;</td><td><sup>Верхній індекс</sup></td></tr><tr><td>&lt;sub&gt; ... &lt;/sub&gt;</td><td><sub>Нижній індекс</sub></td></tr><tr><td>&lt;small&gt; ... &lt;/small&gt;</td><td><small>Зменшує розмір шрифту на одну умовну одиницю в порівнянні зі звичайним текстом</small></td></tr><tr><td>&lt;strong&gt;&nbsp;...&nbsp;&lt;/strong&gt;</td><td><strong>Призначений для акцентування тексту. Текст відображається жирним шрифтом</strong></td></tr></table>"
+    },
+    {
+      "id": "html4",
+      "href": "html#html4",
+      "title": "Списки",
+      "article": "<table class=\"table\"><tr><td><br>&lt;ol&gt; &lt;/ol&gt;</td><td><br>Створює контейнер для нумерованого списоку<br>Вид нумерації списку задається атрибутом <b>type</b></td><td>type=\"1\" - арабські цифри<br>type=\"I\" - римські цифри<br>type=\"A\" - великі латинські літери<br>type=\"a\" - малі латинські літери</td></tr><tr><td>&lt;ul&gt; &lt;/ul&gt;</td><td>Створює контейнер для маркірованого списоку<br>Маркер списку задається атрибутом <b>type</b></td><td>type=\"disk\" - зафарбоване коло<br>type=\"circle\" - не зафарбоване коло<br>type=\"square\" - зафарбований квадрат</td></tr><tr><td>&lt;li&gt; ... &lt;/li&gt;</td><td>Створює елемент (рядок) списку</td><td></td></tr></table><pre><code>&lt;ul <span class=\"color-red\">type</span>=&quot;circle&quot;&gt;    <i>&lt; !-- Створюємо маркірований список. Атрибут <b>type</b> задає маркер списку --&gt;</i>\n  &lt;li&gt;Microsoft&lt;/li&gt;  <i>&lt; !-- Створюємо рядок списку --&gt;</i>\n  &lt;li&gt;Google&lt;/li&gt;\n  &lt;li&gt;Apple&lt;/li&gt;\n  &lt;li&gt;IBM&lt;/li&gt;\n&lt;/ul&gt;</code></pre>"
+    },
+    {
+      "id": "html5",
+      "href": "html#html5",
+      "title": "Горизонтальні лінії",
+      "article": "<table class=\"table\"><tr><td>&lt;hr&gt;</td><td>Горизонтальна лінія. Використовується для тематичного поділу параграфів. Одинарний тег. Стилізується в CSS</td></tr></table><pre><code>  hr &#123;\n    width: 80%;\n    height: 2px;\n    background-color: red;\n    text-align: center;\n  &#125;</code></pre>"
+    },
+    {
+      "id": "html6",
+      "href": "html#html6",
+      "title": "Розміщення зображень на Web-сторінці",
+      "article": "<table class=\"table\"><tr><td>&lt;img&gt;</td><td>Відображення на веб-сторінці зображень в графічному форматі (.gif, .jpeg, .png). Одинарний тег.<br>Адреса файлу з картинкою (повне ім'я зі шляхом розміщення) задається через атрибут <b>src</b>. Атрибут <b>alt</b> задає альтернативний текст для зображення.</td></tr></table><pre><code>&lt;img <span class=\"color-red\">src</span>=\"./images/cat.png\" <span class=\"color-red\">alt</span>=\"Фото кота\"&gt;</code></pre>"
+    },
+    {
+      "id": "html7",
+      "href": "html#html7",
+      "title": "Внутрішні та зовнішні гіперпосилання",
+      "article": "<table class=\"table\"><tr><td>&lt;a&gt;Текст&nbsp;посилання&lt;/a&gt;</td><td>Гіперпосилання або визначення якоря в тексті. URL-адресу об'єкту, з яким зв'язане посилання (або якір - при створенні внутрішнього посилання) задає атрибут <b>href</b>.<br>Атрибут <b>target</b> визначає, в якому вікні відкриється дане гіперпосилання. target=&quot;_blank&quot; - відкриває гіперпосилання в новому вікні</td></tr></table><pre><code>&lt;a <span class=\"color-red\">href</span>=&quot;./about.html&quot; <span class=\"color-red\">target</span>=&quot;_blank&quot;&gt;Про нас&lt;/a&gt;</code></pre><p> &bull; <strong>Якоря</strong>, або внутрішні посилання, створюють переходи на різні розділи поточної веб-сторінки, дозволяючи швидко переміщатися між розділами. Це використовується у випадку, коли на сторінці занадто багато тексту. При створенні внутрішнього посилання атрибут href містить ім'я вказівника (id елемента, на який створюється посилання) - так званий якір, а не URl-адресу. Перед ім'ям вказівника ставиться знак <b>#</b>.</p><pre><code>&lt;h3 <span class=\"color-red\">id</span>=&quot;topic1&quot;&gt;HTML-документ та його структура.&lt;/h3&gt; <i>&lt;!-- задаєм атрибут id елементу --&gt;</i>\n&lt;a <span class=\"color-red\">href</span>=&quot;#topic1&quot;&gt;структура HTML-документа&lt;/a&gt;        <i>&lt;!-- створюємо якір, вказавши #id елемента --&gt;</i></code></pre><p>Якщо потрібно зробити посилання з однієї сторінки сайту на певний розділ іншої сторінки, то необхідно задати id для цього розділу сторінки, а потім додати його до абсолютної адреси посилання:</p><pre><code>&lt;a <span class=\"color-red\">href</span>=&quot;https://site_name/dir_name/file_name.html#topic1&quot; <span class=\"color-red\">target</span>=&quot;_blank&quot;&gt;текст посилання&lt;/a&gt;</code></pre>"
+    },
+    {
+      "id": "html7",
+      "href": "html#html7",
+      "title": "",
+      "article": ""
     }
+
 
 
 
