@@ -901,13 +901,13 @@ var ContentsService = /** @class */ (function () {
     ContentsService.prototype.getContentHtml = function () {
         return this.http.get('assets/contentstore/contenthtml.json')
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (data) {
-            return data.contentjs;
+            return data.contenthtml;
         }));
     };
     ContentsService.prototype.getContentCss = function () {
         return this.http.get('assets/contentstore/contentcss.json')
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (data) {
-            return data.contentjs;
+            return data.contentcss;
         }));
     };
     ContentsService.ctorParameters = function () { return [

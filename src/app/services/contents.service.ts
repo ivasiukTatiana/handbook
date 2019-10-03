@@ -28,16 +28,16 @@ export class ContentsService {
   }
 
   getContentHtml(): Observable<MainContent[]> {
-    return this.http.get<{contentjs: MainContent[]}>('assets/contentstore/contenthtml.json')
+    return this.http.get<{contenthtml: MainContent[]}>('assets/contentstore/contenthtml.json')
       .pipe(map((data) => {
-        return data.contentjs;
+        return data.contenthtml;
       }));
   }
 
   getContentCss(): Observable<MainContent[]> {
-    return this.http.get<{contentjs: MainContent[]}>('assets/contentstore/contentcss.json')
+    return this.http.get<{contentcss: MainContent[]}>('assets/contentstore/contentcss.json')
       .pipe(map((data) => {
-        return data.contentjs;
+        return data.contentcss;
       }));
   }
 }
