@@ -55,15 +55,59 @@
       "article": "<table class=\"table\"><tr><td>&lt;a&gt;Текст&nbsp;посилання&lt;/a&gt;</td><td>Гіперпосилання або визначення якоря в тексті. URL-адресу об'єкту, з яким зв'язане посилання (або якір - при створенні внутрішнього посилання) задає атрибут <b>href</b>.<br>Атрибут <b>target</b> визначає, в якому вікні відкриється дане гіперпосилання. target=&quot;_blank&quot; - відкриває гіперпосилання в новому вікні</td></tr></table><pre><code>&lt;a <span class=\"color-red\">href</span>=&quot;./about.html&quot; <span class=\"color-red\">target</span>=&quot;_blank&quot;&gt;Про нас&lt;/a&gt;</code></pre><p> &bull; <strong>Якоря</strong>, або внутрішні посилання, створюють переходи на різні розділи поточної веб-сторінки, дозволяючи швидко переміщатися між розділами. Це використовується у випадку, коли на сторінці занадто багато тексту. При створенні внутрішнього посилання атрибут href містить ім'я вказівника (id елемента, на який створюється посилання) - так званий якір, а не URl-адресу. Перед ім'ям вказівника ставиться знак <b>#</b>.</p><pre><code>&lt;h3 <span class=\"color-red\">id</span>=&quot;topic1&quot;&gt;HTML-документ та його структура.&lt;/h3&gt; <i>&lt;!-- задаєм атрибут id елементу --&gt;</i>\n&lt;a <span class=\"color-red\">href</span>=&quot;#topic1&quot;&gt;структура HTML-документа&lt;/a&gt;        <i>&lt;!-- створюємо якір, вказавши #id елемента --&gt;</i></code></pre><p>Якщо потрібно зробити посилання з однієї сторінки сайту на певний розділ іншої сторінки, то необхідно задати id для цього розділу сторінки, а потім додати його до абсолютної адреси посилання:</p><pre><code>&lt;a <span class=\"color-red\">href</span>=&quot;https://site_name/dir_name/file_name.html#topic1&quot; <span class=\"color-red\">target</span>=&quot;_blank&quot;&gt;текст посилання&lt;/a&gt;</code></pre>"
     },
     {
-      "id": "html7",
-      "href": "html#html7",
-      "title": "",
-      "article": ""
+      "id": "html8",
+      "href": "html#html8",
+      "title": "Абсолютний і відносний шлях",
+      "article": "content coming soon"
+    },
+    {
+      "id": "html9",
+      "href": "html#html9",
+      "title": "Зображення-карти",
+      "article": "content coming soon"
+    },
+    {
+      "id": "html10",
+      "href": "html#html10",
+      "title": "Таблиці",
+      "article": "content coming soon"
+    },
+    {
+      "id": "html11",
+      "href": "html#html11",
+      "title": "Форми",
+      "article": "content coming soon"
+    },
+    {
+      "id": "html12",
+      "href": "html#html12",
+      "title": "Cемантичні елементи HTML5",
+      "article": "content coming soon"
+    },
+    {
+      "id": "html13",
+      "href": "html#html13",
+      "title": "Вбудований фрейм (ifram)",
+      "article": "content coming soon"
+    },
+    {
+      "id": "html14",
+      "href": "html#html14",
+      "title": "HTML5-аудіо",
+      "article": "content coming soon"
+    },
+    {
+      "id": "html15",
+      "href": "html#html15",
+      "title": "HTML5-відео",
+      "article": "content coming soon"
+    },
+    {
+      "id": "html16",
+      "href": "html#html16",
+      "title": "Мнемоніки в HTML",
+      "article": "content coming soon"
     }
-
-
-
-
 
   ]
 }
