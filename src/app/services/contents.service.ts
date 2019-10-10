@@ -13,7 +13,7 @@ export class ContentsService {
   constructor(private http: HttpClient) { }
 
   getStyle(): Observable<string> {
-    return this.http.get<{css: string}>('assets/contentstore/css/contentcss.json')
+    return this.http.get<{css: string}>('assets/contentstore/css/style.json')
       .pipe(map((data) => {
         return data.css;
       }));
