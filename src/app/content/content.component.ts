@@ -1,16 +1,14 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
 
 import { ContentsService } from '../services/contents.service';
 import { MainContent } from '../models/main-content';
-import { ArticlesComponent } from '../articles/articles.component';
 
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
   styleUrls: ['./content.component.scss'],
-  //encapsulation: ViewEncapsulation.None,
 })
 export class ContentComponent implements OnInit {
 
@@ -23,7 +21,6 @@ export class ContentComponent implements OnInit {
     filter((event: any) => event instanceof NavigationEnd))
     .subscribe(event => {
         this.activeLink = event.url;
-        //console.log(this.activeLink);
     });
   }
 
