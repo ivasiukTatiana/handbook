@@ -119,12 +119,6 @@
       "href": "js#js18",
       "title": "Планування виклику функцій",
       "article": "<p>Якщо необхідно виконати функцію не в даний момент, а через заданий інтервал часу, використовуються методи <b>setTimeout</b> і <b>setInterval</b>.</p><table class=\"table\"><tr><th>Метод</th><th>Пояснення</th><th colspan=\"2\">Параметри</th></tr><tr><td rowspan=\"2\">setTimeout(function,&nbsp;ms)</td><td rowspan=\"2\">дозволяє викликати функцію один раз через певний інтервал часу. Метод повертається цифрове значення - timerId, що використовується для ідентифікації створеного таймера</td><td>function</td><td>функція, яка буде виконана</td></tr><tr><td>ms</td><td>затримка перед запуском в мілісекундах (1000&nbsp;мс&nbsp;=&nbsp;1&nbsp;с)</td></tr><tr><td>clearTimeout(timerId)</td><td>якщо функція ще не була виконана, зупиняє її виконання</td><td>timerId</td><td>ідентифікатор таймера, створеного setTimeout()</td></tr><tr><td colspan=\"4\" class=\"td-code\"><b>function</b> showMessage() &#123;<br>&nbsp;&nbsp;alert(\"Повідомлення з затримкою\");<br>&#125;<br><i> // <b>Важливо!</b> - передаємо функцію, але не запускаємо її: не додаємо дужки () після імені функції</i><br><b>let</b> timerId = setTimeout(showMessage, 1000); <i> // заплановано виклик функції showMessage() через одну секунду.</i><br>clearTimeout(timerId); <i> // скасовуємо виклик функції showMessage(). В результаті нічого не відбувається</i></td></tr><tr><td rowspan=\"2\">setInterval(function, ms)</td><td rowspan=\"2\">дозволяє викликати функцію регулярно, повторюючи виклик через певний інтервал часу. Метод повертається цифрове значення - timerId, що використовується для ідентифікації створеного таймера</td><td>function</td><td>функція, яка буде виконуватись</td></tr><tr><td>ms</td><td>затримка перед наступним запуском в мілісекундах</td></tr><tr><td>clearInterval(timerId)</td><td>зупиняє подальше виконання функції</td><td>timerId</td><td>ідентифікатор таймера</td></tr><tr><td colspan=\"4\" class=\"td-code\"><b>let</b> timerId = setInterval(showMessage, 2000); <i> // викликається функція showMessage() кожні 2 секунди</i><br>setTimeout(<b>function</b>()&#123; clearInterval(timerId); &#125;, 5000); <i> // припиняються виклики showMessage() через 5 секунд</i></td></tr></table>"
-    },
-    {
-      "id": "js19",
-      "href": "js#js19",
-      "title": "HTML5 Canvas 2d API",
-      "article": "content coming soon"
     }
   ]
 }

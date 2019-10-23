@@ -36,6 +36,14 @@ export class HeaderComponent implements OnInit {
       headerNav: "JavaScript",
       headerLink: "/js"
     },
+    {
+      headerId: 3,
+      headerImg: "./assets/images/icon-canvas.jpg",
+      headerEn: " ",
+      headerUk: " Canvas - графічна область на web-сторінці.",
+      headerNav: "Canvas",
+      headerLink: "/canvas"
+    },
   ];
 
   activeHeaderNav: HeaderNav = this.headerNav[0];

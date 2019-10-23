@@ -28,31 +28,27 @@ export class ContentComponent implements OnInit {
     this.contentsService.getStyle().subscribe((data: any) => {
       this.styleContent = data;
     });
-
+    let contentName: string;
     switch ( true ) {
       case this.activeLink.startsWith("/html"):
-        this.contentsService.getContentHtml().subscribe((data:MainContent[]) => {
-          this.wholeContent = data;
-        });
+        contentName = "contenthtml";
         break;
 
       case this.activeLink.startsWith("/js"):
-        this.contentsService.getContentJs().subscribe((data:MainContent[]) => {
-          this.wholeContent = data;
-        });
+        contentName = "contentjs";
         break;
 
       case this.activeLink.startsWith("/css"):
-        this.contentsService.getContentCss().subscribe((data:MainContent[]) => {
-          this.wholeContent = data;
-        });
+        contentName = "contentcss";
         break;
 
       default:
-        this.contentsService.getContentHtml().subscribe((data:MainContent[]) => {
-          this.wholeContent = data;
-        });
+        contentName = "contenthtml";
         break;
     }
+    this.contentsService.getContent(contentName).subscribe((data:MainContent[]) => {
+      this.wholeContent = data;
+    });
+
   }
 }

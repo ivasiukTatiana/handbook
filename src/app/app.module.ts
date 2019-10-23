@@ -18,6 +18,7 @@ import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
 import { HtmlOutletDirective } from './directives/html-outlet.directive';
 import { ArticlesComponent } from './articles/articles.component';
+import { CanvasComponent } from './canvas/canvas.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ArticlesComponent } from './articles/articles.component';
     ContentComponent,
     FooterComponent,
     HtmlOutletDirective,
-    ArticlesComponent
+    ArticlesComponent,
+    CanvasComponent
   ],
   imports: [
     BrowserModule,
