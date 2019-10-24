@@ -37,6 +37,10 @@ $color: #000080;
   }
 }
 
+.button-container {
+  background : darken($background-color, 3%);
+}
+
 .content-container {
   flex-grow: 3;
   height: 660px;
@@ -118,5 +122,15 @@ $color: #000080;
 @media (min-width: 320px) and (max-width: 580px) {
   .content-container {
     font-size: 0.6rem;
+  }
+
+  .menu-button {
+    .mat-icon {
+      width: 18px;
+      height: 18px;
+    }
+    .material-icons {
+      font-size: 18px;
+    }
   }
 }
