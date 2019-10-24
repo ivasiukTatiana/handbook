@@ -30,7 +30,17 @@ export class HtmlOutletDirective {
       @ViewChildren('canvas') canvases: QueryList<ElementRef>;
 
       canvasExamples = {
-        strokerect: function(ctx) {
+        stroke: ctx => {
+          ctx.lineWidth = 10;
+          ctx.lineCap = "round";
+          ctx.strokeStyle = "green";
+          ctx.beginPath();
+          ctx.moveTo(20, 20);
+          ctx.lineTo(100, 100);
+          ctx.lineTo(125, 75);
+          ctx.stroke();
+        },
+        strokerect: ctx => {
           ctx.fillStyle = "rgb(192, 192, 192)";
           ctx.fillRect(18, 33, 89, 64);
           ctx.lineWidth = 3;
@@ -49,7 +59,7 @@ export class HtmlOutletDirective {
           ctx.fillText('height',114,70);
           ctx.fillText('width',50,42);
         },
-        arc: function(ctx) {
+        arc: ctx => {
           ctx.lineWidth = 3;
           ctx.strokeStyle = "#000";
           ctx.arc(75, 75, 45, 0, Math.PI*1.5, false);
@@ -82,7 +92,7 @@ export class HtmlOutletDirective {
           ctx.fillText('start',117,70);
           ctx.fillText('end',81,33);
         },
-        arcto: function(ctx) {
+        arcto: ctx => {
           ctx.lineWidth = 3;
           ctx.strokeStyle = "#000";
           ctx.beginPath();
@@ -114,7 +124,7 @@ export class HtmlOutletDirective {
           ctx.fillText('(x2, y2)',110,90);
           ctx.fillText('radius',55,82);
         },
-        quadratic: function(ctx) {
+        quadratic: ctx => {
           ctx.lineWidth = 0.5;
           ctx.beginPath();
           ctx.moveTo(13, 20);
@@ -143,7 +153,7 @@ export class HtmlOutletDirective {
           ctx.fillText('(endX, endY)',85,15);
           ctx.fillText('(controlX, controlY)',27,129);
         },
-        bezier: function(ctx) {
+        bezier: ctx => {
           ctx.lineWidth = 0.5;
           ctx.beginPath();
           ctx.moveTo(14, 20);
@@ -178,7 +188,15 @@ export class HtmlOutletDirective {
           ctx.fillText('(controlX1, controlY1)',2,122);
           ctx.fillText('(controlX2, controlY2)',44,103);
         },
-        lngradient: function(ctx) {
+        text: ctx => {
+          ctx.fillStyle = 'rgba(0, 0, 128, 0.9)';
+          ctx.strokeStyle = 'rgba(128, 0, 0, 1.0)';
+          ctx.lineWidth = 2;
+          ctx.font = "bold 32px sans-serif";
+          ctx.strokeText("Привіт!", 12, 77);
+          ctx.fillText("Привіт!", 10, 75);
+        },
+        lngradient: ctx => {
           var grd=ctx.createLinearGradient(5,5,140,5);
           grd.addColorStop(0,"red");
           grd.addColorStop(0.33,"orange");
@@ -187,13 +205,28 @@ export class HtmlOutletDirective {
           ctx.fillStyle=grd;
           ctx.fillRect(5,5,140,140);
         },
-        rdgradient: function(ctx) {
+        rdgradient: ctx => {
           var grd=ctx.createRadialGradient(75,150,50,75,150,170);
           grd.addColorStop(0,"orange");
           grd.addColorStop(0.45,"yellow");
           grd.addColorStop(1,"aqua");
           ctx.fillStyle=grd;
           ctx.fillRect(5,5,140,140);
+        },
+        image3: ctx => {
+          let img = new Image();
+          img.src = "./assets/images/imgmini.jpg";
+          img.onload = () => ctx.drawImage(img, 0, 0);
+        },
+        image5: ctx => {
+          let img = new Image();
+          img.src = "./assets/images/imgmini.jpg";
+          img.onload = () => ctx.drawImage(img, 25, 25, 100, 100);
+        },
+        image9: ctx => {
+          let img = new Image();
+          img.src = "./assets/images/imgmini.jpg";
+          img.onload = () => ctx.drawImage(img, 30, 15, 100, 50, 30, 50, 100, 50);
         }
       };
 

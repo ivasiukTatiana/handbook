@@ -17,7 +17,6 @@ import { HeaderComponent } from './header/header.component';
 import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
 import { HtmlOutletDirective } from './directives/html-outlet.directive';
-import { ArticlesComponent } from './articles/articles.component';
 import { CanvasComponent } from './canvas/canvas.component';
 
 @NgModule({
@@ -27,7 +26,6 @@ import { CanvasComponent } from './canvas/canvas.component';
     ContentComponent,
     FooterComponent,
     HtmlOutletDirective,
-    ArticlesComponent,
     CanvasComponent
   ],
   imports: [
@@ -37,7 +35,7 @@ import { CanvasComponent } from './canvas/canvas.component';
     CommonModule,
     HttpClientModule,
     MatToolbarModule,
-    MatSidenavModule,
+    //MatSidenavModule,
     MatListModule,
     MatIconModule,
     MatTooltipModule,
