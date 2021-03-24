@@ -13,7 +13,7 @@ $color: #000080;
   .nav-container-sticky {
     position: sticky;
     top: 60px;
-    height: 656px;
+    height: calc(~"100vh - 64px");
     overflow-y: auto;
   }
 
