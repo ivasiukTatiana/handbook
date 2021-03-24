@@ -82,6 +82,9 @@ $color: #000080;
 }
 
 @media (min-width: 320px) and (max-width: 960px) {
+  .wrap-container {
+    display: block;
+  }
   .nav-container {
     display: none;
   }
