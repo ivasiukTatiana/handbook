@@ -13,8 +13,8 @@
   </div>
 
   <div class="nav-container" >
-    <div class="nav-container-sticky">
-      <mat-nav-list class="mat-elevation-z4">
+    <div class="nav-container-sticky mat-elevation-z4">
+      <mat-nav-list>
        <mat-list-item *ngFor="let item of wholeContent">
             <a matLine [href]="item.href">&bull; {{ item.title }}</a>
         </mat-list-item>
