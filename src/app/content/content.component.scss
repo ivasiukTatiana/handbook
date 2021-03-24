@@ -88,10 +88,10 @@ $color: #000080;
   .nav-container {
     display: none;
   }
-  .menu-button {
-    margin-left: 2px;
-    position: sticky;
+  .menu-button {    
+    position: absolute;
     top: 60px;
+    right: 4px;
   }
 }
 
