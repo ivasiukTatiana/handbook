@@ -43,7 +43,7 @@ $color: #000080;
 
 .content-container {
   flex-grow: 3;
-  height: 660px;
+  height: calc(~"100vh - 60px");
   background : darken($background-color, 3%);
   font-family: Roboto,"Helvetica Neue",sans-serif;
   overflow: auto;
