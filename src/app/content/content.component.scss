@@ -52,7 +52,7 @@ $color: #000080;
   margin-bottom: 0;
 
   .content {
-    height: 608px;
+    height: calc(~"100% - 55px");
     overflow-y: scroll;
     padding-top: 60px;
     margin-top: -60px;
